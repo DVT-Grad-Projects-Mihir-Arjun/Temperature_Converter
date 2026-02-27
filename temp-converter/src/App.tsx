@@ -6,16 +6,16 @@ function App() {
   const [celcius, setCelcius] = useState('');
   const [fahrenheit, setFahrenheit] = useState('');
 
-  function handleCelciusConversion(e: ChangeEvent<HTMLInputElement>){
+  function handleCelciusConversion(e: ChangeEvent<HTMLInputElement>) {
     const temperature = e.target.value;
     setCelcius(temperature);
-    setFahrenheit(temperature === '' ? '' : String((parseFloat(temperature) * 9/5) + 32));
+    setFahrenheit(temperature === '' ? '' : String((parseFloat(temperature) * 9 / 5) + 32));
   }
 
-  function handleFahrenheitConversion(e: ChangeEvent<HTMLInputElement>){
+  function handleFahrenheitConversion(e: ChangeEvent<HTMLInputElement>) {
     const temperature = e.target.value;
     setFahrenheit(temperature);
-    setCelcius(temperature === '' ? '' : String((parseFloat(temperature)-32)*(5/9)))
+    setCelcius(temperature === '' ? '' : String((parseFloat(temperature) - 32) * (5 / 9)))
   }
 
   return (
