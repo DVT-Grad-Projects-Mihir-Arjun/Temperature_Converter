@@ -1,5 +1,6 @@
 import { useState, type ChangeEvent } from 'react'
 import './index.css'
+import TemperatureConverter from './components/TemperatureConverter.tsx';
 
 function App() {
   const [temperature, setTemperature] = useState('');
@@ -24,25 +25,6 @@ function App() {
       />
     </>
   )
-}
-
-interface tempProps{
-  label: string;
-  value: string;
-  tempChange: React.ChangeEventHandler<HTMLInputElement>;
-}
-
-function TemperatureConverter({ label, value, tempChange }:tempProps) {
-  return (
-    <label>
-      {label}
-      {' '}
-      <input
-        value={value}
-        onChange={tempChange}
-      />
-    </label>
-  );
 }
 
 export default App
