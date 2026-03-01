@@ -26,7 +26,7 @@ export default function TemperatureConverter(){
 
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-[80vh] flex items-center justify-center">
         <div className="flex flex-col md:flex-row gap-12">
 
           <Card className="relative w-80 overflow-hidden bg-blue-100 duration-300 hover:scale-105 hover:shadow-xl">
