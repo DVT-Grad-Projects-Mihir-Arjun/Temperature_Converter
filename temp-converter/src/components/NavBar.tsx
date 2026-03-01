@@ -7,7 +7,7 @@ export default function NavBar() {
       <div className="w-full border-b bg-background">
         <div className="container mx-auto flex h-16 items-center justify-between px-6">
 
-          <h1 className="text-lg font-bold">TempApp</h1>
+          <h1 className="text-lg font-bold">My App</h1>
 
           <NavigationMenu>
             <NavigationMenuList className="flex gap-6">
