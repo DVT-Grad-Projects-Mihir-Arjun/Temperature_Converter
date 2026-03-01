@@ -14,6 +14,6 @@ createRoot(document.getElementById('root')!).render(
       <Route path ='/team' element={<TeamDirectory/>}/>
       <Route path='/*' element={<PageNotFound/>}/>
     </Routes>
-  </BrowserRouter>,
-  </StrictMode>,
+  </BrowserRouter>
+  </StrictMode>
 )
