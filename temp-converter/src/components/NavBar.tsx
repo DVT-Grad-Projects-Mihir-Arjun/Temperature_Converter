@@ -3,35 +3,37 @@ import { Link } from "react-router"
 
 export default function NavBar() {
   return (
-    <div className="w-full border-b bg-background">
-      <div className="container mx-auto flex h-16 items-center justify-between px-6">
-        
-        <h1 className="text-lg font-bold">TempApp</h1>
+    <>
+      <div className="w-full border-b bg-background">
+        <div className="container mx-auto flex h-16 items-center justify-between px-6">
 
-        <NavigationMenu>
-          <NavigationMenuList className="flex gap-6">
+          <h1 className="text-lg font-bold">TempApp</h1>
 
-            <NavigationMenuItem>
-              <Link
-                to="/"
-                className="text-sm font-medium transition-colors hover:text-primary"
-              >
-                Temperature Converter
-              </Link>
-            </NavigationMenuItem>
+          <NavigationMenu>
+            <NavigationMenuList className="flex gap-6">
 
-            <NavigationMenuItem>
-              <Link
-                to="/team"
-                className="text-sm font-medium transition-colors hover:text-primary"
-              >
-                Team Directory
-              </Link>
-            </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link
+                  to="/"
+                  className="text-sm font-medium transition-colors hover:text-primary"
+                >
+                  Temperature Converter
+                </Link>
+              </NavigationMenuItem>
 
-          </NavigationMenuList>
-        </NavigationMenu>
+              <NavigationMenuItem>
+                <Link
+                  to="/team"
+                  className="text-sm font-medium transition-colors hover:text-primary"
+                >
+                  Team Directory
+                </Link>
+              </NavigationMenuItem>
+
+            </NavigationMenuList>
+          </NavigationMenu>
+        </div>
       </div>
-    </div>
+    </>
   )
 }

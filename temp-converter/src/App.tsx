@@ -1,4 +1,4 @@
-import { NavBar } from './components/NavBar.tsx'
+import NavBar from "../src/components/NavBar.tsx"
 import TemperatureConverter from './components/TemperatureConverter.tsx'
 import './index.css'
 
